@@ -13,7 +13,7 @@ pipeline {
                 echo "hi ${params.firstName} ${params.lastName}, welcome"
             }
         }
-        stage('deploy to dev ') {
+        stage('deploy to deve ') {
             when {
               expression {
                params.Environment == "dev"
